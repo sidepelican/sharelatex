@@ -2,7 +2,7 @@ version: '2'
 services:
     sharelatex:
         restart: always
-        image: sharelatex/sharelatex
+        build: ../sharelatex-docker-image
         container_name: sharelatex
         depends_on:
             - mongo
